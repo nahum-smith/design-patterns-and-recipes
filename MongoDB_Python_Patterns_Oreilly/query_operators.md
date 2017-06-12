@@ -12,8 +12,6 @@ $mod | Modulo X Equals Y | “seconds”:{"$mod”:[60,0]} | MOD()
 $ne | Not Equals | “seconds”:{"$ne”:60} | !=
 $in | In | “skills”:{"$in”:["c”,"c++"]} | IN
 $nin | Not In | “skills”:{"$nin”:["php”,"ruby”,"perl"]} | NOT IN
-$nor | Nor | “$nor”:[{"language”:"english"},{"coun-
-try”:"usa"}] | N/A
-$or | Or | “$or”:[{"language”:"english"},{"coun-
-try”:"usa"}] | OR
+$nor | Nor | “$nor”:[{"language”:"english"},{"country”:"usa"}] | N/A
+$or | Or | “$or”:[{"language”:"english"},{"country”:"usa"}] | OR
 $size | Array Must Be Of Size | “skills”:{"$size”:3} | N/A
