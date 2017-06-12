@@ -35,6 +35,11 @@ def main():
     users = dbh.users
     users.insert_one(user_doc)
     print("Successfully inserted document: {}".format(user_doc))
+    query_result = users.find_one(user_doc)
+    if query_result:
+        print('Successful retrieval of document: {}'.format(query_result))
+
+
 
 if __name__ == "__main__":
     main()
