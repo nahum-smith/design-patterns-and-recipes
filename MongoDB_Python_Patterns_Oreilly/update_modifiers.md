@@ -1,5 +1,6 @@
 # MongoDB Update Modifiers
 Modifier | Meaning | Example
+--- | --- | --- 
 $inc | Atomic Increment | “$inc”:{"score”:1}
 $set | Set Property Value | “$set”:{"username”:"niall"}
 $unset | Unset (delete) Property | “$unset”:{"username”:1}
